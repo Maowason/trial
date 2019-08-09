@@ -29,7 +29,7 @@ h1:after
     opacity: 1;
     display: block;
     position: relative;
-    max-width: 100%; 
+    max-width: 100%;
     max-height: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -46,7 +46,10 @@ h1:after
     font-weight: bold;
     margin-top: 15px;
 }
-.img-box::after
+.img-box img {
+    position: relative;
+}
+.img-box img::after
 {
     content: '';
     opacity: 0;
@@ -84,17 +87,17 @@ h1:after
 {
     color: #fff;
 }
-.img-box:hover
+.img-box img:hover
 {
     right: 0px;
     bottom: 0px;
 }
-.img-box:hover:after
+.img-box img:hover:after
 {
     opacity: 0.6;
-    
+
 }
-.img-box:hover ul
+.img-box img:hover ul
 {
     opacity: 0.5;
 }
@@ -103,7 +106,7 @@ h1:after
     color: #007bff;
     border: 1px solid #007bff;
 }
-.img-box:after, .img-box ul, .img-box ul li
+.img-box img:after, .img-box ul, .img-box ul li
 {
     transition: all 0.5s ease-in-out 0s;
 }
